@@ -28,6 +28,14 @@
     ul li { margin-bottom: 8px; color: #333; }
     a { color: #1e6bff; text-decoration: none; }
     a:hover { text-decoration: underline; }
+    .highlight {
+      background: #f0f5ff;
+      border-left: 4px solid #1e6bff;
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin-bottom: 20px;
+      color: #333;
+    }
     .footer { text-align: center; margin-top: 60px; font-size: 13px; color: #aaa; }
   </style>
 </head>
@@ -40,51 +48,63 @@
   <p>This Privacy Policy describes how <strong>OVERview</strong> ("we", "us", or "our") collects, uses, and protects your information when you use our mobile application. By using OVERview, you agree to the practices described in this policy.</p>
 
   <h2>1. Information We Collect</h2>
-  <p>OVERview is designed with your privacy in mind. We collect only the minimum data necessary to provide the service:</p>
+  <p>OVERview collects only the data necessary to provide you with a reliable and seamless financial tracking experience:</p>
   <ul>
-    <li><strong>Financial data you enter manually</strong> — account balances, transactions, goals, debts, and categories. This data is stored locally on your device and/or in your personal iCloud account.</li>
-    <li><strong>Usage data</strong> — anonymous analytics about how features are used, to help us improve the app. This data does not identify you personally.</li>
+    <li><strong>Financial data you enter manually</strong> — account balances, transactions, goals, debts, savings, and categories.</li>
+    <li><strong>Account information</strong> — email address and password (encrypted) used to create and access your account.</li>
+    <li><strong>Usage data</strong> — anonymous, non-identifiable analytics about feature usage, used solely to improve the app.</li>
     <li><strong>Device information</strong> — device type and OS version, used only for technical support purposes.</li>
   </ul>
 
-  <h2>2. How We Use Your Information</h2>
+  <h2>2. Cloud Storage & Sync (Supabase)</h2>
+  <div class="highlight">
+    Your financial data is stored both <strong>locally on your device</strong> and securely synchronized with our cloud database powered by <strong>Supabase</strong>. This ensures your data is never lost if you change or lose your device — you can always restore everything by signing into your account.
+  </div>
+  <p>Supabase stores data on encrypted servers compliant with industry security standards. Your data is associated with your personal account and is never shared with other users or third parties. You can learn more about Supabase's security practices at <a href="https://supabase.com/security" target="_blank">supabase.com/security</a>.</p>
+
+  <h2>3. How We Use Your Information</h2>
   <ul>
-    <li>To provide and improve the core functionality of the app</li>
-    <li>To sync your data across your personal devices via iCloud (if enabled)</li>
+    <li>To provide core app functionality — tracking accounts, transactions, goals, and forecasts</li>
+    <li>To sync your data securely across your devices via Supabase cloud</li>
+    <li>To allow data restoration when switching to a new device</li>
     <li>To respond to support requests</li>
     <li>To analyze anonymous usage patterns and fix bugs</li>
   </ul>
 
-  <h2>3. Data Storage & Security</h2>
-  <p>Your financial data is stored locally on your device. If you enable iCloud sync, data is stored in your personal Apple iCloud account and governed by Apple's Privacy Policy. We do not have access to your iCloud data.</p>
-  <p>We implement industry-standard security practices to protect any data we do process. However, no method of transmission over the internet is 100% secure.</p>
+  <h2>4. Data Security</h2>
+  <p>We take the security of your data seriously. All data transmitted between your device and our cloud servers is encrypted using industry-standard TLS/SSL protocols. Data stored in Supabase is encrypted at rest. Your password is never stored in plain text.</p>
+  <p>Despite our best efforts, no method of transmission over the internet is 100% secure. We encourage you to use a strong, unique password for your account.</p>
 
-  <h2>4. Third-Party Services</h2>
-  <p>OVERview may use the following third-party services, each with their own privacy policies:</p>
+  <h2>5. Third-Party Services</h2>
+  <p>OVERview uses the following third-party services, each governed by their own privacy policies:</p>
   <ul>
-    <li><strong>Apple iCloud</strong> — for data synchronization (optional)</li>
-    <li><strong>OpenAI / Anthropic</strong> — for AI Assistant features. Queries sent to the AI assistant may be processed by third-party AI providers. Please do not include sensitive personal data in AI queries.</li>
+    <li><strong>Supabase</strong> — cloud database and authentication provider. Your financial data and account credentials are stored and managed via Supabase. See <a href="https://supabase.com/privacy" target="_blank">supabase.com/privacy</a>.</li>
+    <li><strong>AI Assistant</strong> — if you use the AI Assistant feature, your queries may be processed by a third-party AI provider. Please do not include sensitive personal information in AI queries.</li>
   </ul>
 
-  <h2>5. We Do Not Sell Your Data</h2>
-  <p>We do not sell, rent, or share your personal financial data with any third parties for marketing or advertising purposes. Ever.</p>
+  <h2>6. We Do Not Sell Your Data</h2>
+  <p>We do not sell, rent, or share your personal or financial data with any third parties for marketing or advertising purposes. Ever.</p>
 
-  <h2>6. Children's Privacy</h2>
-  <p>OVERview is not intended for children under the age of 13. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal information, please contact us and we will delete it.</p>
+  <h2>7. Data Retention & Deletion</h2>
+  <p>Your data is retained as long as your account is active. You may delete your account and all associated data at any time from within the app settings. Upon account deletion, all your data will be permanently removed from our servers within 30 days.</p>
 
-  <h2>7. Your Rights</h2>
+  <h2>8. Children's Privacy</h2>
+  <p>OVERview is not intended for children under the age of 13. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal information, please contact us and we will delete it promptly.</p>
+
+  <h2>9. Your Rights</h2>
   <p>You have the right to:</p>
   <ul>
     <li>Access, correct, or delete your data at any time within the app</li>
-    <li>Disable iCloud sync at any time in your device settings</li>
-    <li>Request deletion of any data we hold by contacting us</li>
+    <li>Export your data</li>
+    <li>Request full account and data deletion by contacting us</li>
+    <li>Opt out of anonymous analytics (available in app settings)</li>
   </ul>
 
-  <h2>8. Changes to This Policy</h2>
+  <h2>10. Changes to This Policy</h2>
   <p>We may update this Privacy Policy from time to time. We will notify you of any significant changes by updating the date at the top of this page. Continued use of the app after changes constitutes your acceptance of the new policy.</p>
 
-  <h2>9. Contact Us</h2>
-  <p>If you have any questions about this Privacy Policy, please contact us at:</p>
+  <h2>11. Contact Us</h2>
+  <p>If you have any questions about this Privacy Policy or your data, please contact us at:</p>
   <p><a href="mailto:support@overview-app.com">support@overview-app.com</a></p>
 
   <div class="footer">© 2026 Moneio. All rights reserved.</div>
